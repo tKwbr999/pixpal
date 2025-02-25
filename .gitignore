@@ -1,0 +1,53 @@
+# project specific
+cmd/
+asset/
+
+# Binary files
+/bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+*.prof
+coverage.html
+
+# Dependency directories
+/vendor/
+/go.sum
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Generated SVG files
+*.svg
+
+# Debug files
+debug
+__debug_bin
+
+# Log files
+*.log
+
+# Environment variables
+.env
+.env.local
