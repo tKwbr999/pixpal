@@ -2,7 +2,23 @@
 
 PixPalはピクセルキャラクターを生成するGo製のツールです。
 
-## 使い方
+![Sample SVG](sample.svg)
+
+
+
+## 利用方法
+
+`example`ディレクトリに生成例があります。
+
+```bash
+cd example/defaultMan
+go run main.go
+```
+
+これにより、`example/defaultMan`ディレクトリに`default_man.svg`が生成されます。
+
+
+## コマンドラインツールの使い方
 
 ### インストール
 
@@ -21,8 +37,3 @@ pixpal
 ```bash
 pixpal -o custom_name.svg
 ```
-
-
-### サンプル
-
-
