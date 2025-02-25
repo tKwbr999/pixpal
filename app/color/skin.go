@@ -103,7 +103,11 @@ func DarkenColor(hex string) string {
 // Helper function to convert hex to RGB
 func hexToRGB(hex string) (int, int, int) {
 	var r, g, b int
-	fmt.Sscanf(hex, "#%02x%02x%02x", &r, &g, &b)
+	_, err := fmt.Sscanf(hex, "#%02x%02x%02x", &r, &g, &b)
+	if err != nil {
+		panic(err)
+	}
+
 	return r, g, b
 }
 

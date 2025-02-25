@@ -14,7 +14,11 @@ func main() {
 	flag.Parse()
 
 	content := pal.GenerateDefaultManPal()
-	os.WriteFile(output, []byte(content), 0644)
+	err := os.WriteFile(output, []byte(content), 0644)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
 
 	fmt.Println("SVG file generated successfully!")
 }
