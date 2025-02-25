@@ -39,7 +39,6 @@ ehthumbs.db
 Thumbs.db
 
 # Generated SVG files
-*.svg
 
 # Debug files
 debug
