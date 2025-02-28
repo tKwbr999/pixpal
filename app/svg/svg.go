@@ -23,7 +23,8 @@ const SVG_HEADER = `<svg xmlns="http://www.w3.org/2000/svg" width="%[1]d" height
     </rdf:RDF>
   </metadata>
   `
-const RECT_TAG_FORMAT string = `<rect x="%d" y="%d" width="%d" height="%d" fill="%s"/>`
+const RECT_TAG_FORMAT string = `<rect x="%d" y="%d" width="%d" height="%d" fill="%s"/>
+`
 
 func Header() string {
 	width := WIDTH_UNITS * UNIT
